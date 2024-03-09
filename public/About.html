@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        html {
+            background-color: #2A2438;
+        }
+
+        * {
+            font-family: "Protest Strike", sans-serif;
+        }
+
+        .orange-box {
+            color: white;
+            padding: 0px;
+        }
+
+        h1 {
+            background-color: #f25e14;
+            border: 10px solid black;
+            padding: 10px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+            margin-top: 0px;
+            text-shadow: 2px 2px 10px #07060b;
+        }
+
+        p {
+            color: white;
+            font-size: 20pt;
+            padding: 10px 5px 10px 5px;
+        }
+
+        h2 {
+            font-size: 30pt;
+            color: blue;
+            -webkit-text-stroke-width: 0.8px;
+            -webkit-text-stroke-color: black;
+            text-align: center;
+            text-shadow: 2px 2px 10px #07060b;
+        }
+
+        .color-box {
+            border: 10px solid black;
+            background-color: rgba(221, 160, 221, 0.282);
+            padding-top: 2px;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-bottom: 10px;
+        }
+
+        img {
+            margin-left: 27%;
+            border-radius: 15px;
+            box-shadow: 4px 4px 10px #1e1414d1;
+        }
+
+        nav {
+            margin-top: 30px;
+            margin-left: 42.5%;
+            color: aliceblue;
+            font-size: 17pt;
+            border: 5px solid rgb(12, 12, 68);
+            border-radius: 17px;
+            background-color: blue;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 30px;
+            width: 15%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        a {
+            color: aliceblue;
+        }
+
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="orange-box">
+      <h1 style="font-size: 50pt; text-align: center;" >About</h1>
+    </div>
+    <div class="color-box">
+        <h2>CSS Cascade Model</h2>
+        <hr />
+        <p>The Cascade Specificity Model in CSS determines which styles are applied to an element when multiple conflicting styles are present. The specificity of a selector is calculated based on the type of selector and the number of occurrences of each type in the selector. The specificity is represented by four numbers: a, b, c, and d, where a is the most significant and d is the least significant.
+
+            Here's how it works:
+            
+            Inline styles (a = 1, b = 0, c = 0, d = 0): Inline styles have the highest specificity, so they override any other styles.
+            
+            ID selectors (a = 0, b = 1, c = 0, d = 0): ID selectors have a higher specificity than class selectors and tag selectors.
+            
+            Class selectors, attribute selectors, and pseudo-classes (a = 0, b = 0, c = 1, d = 0): These selectors have a lower specificity than ID selectors but higher than tag selectors.
+            
+            Tag selectors and pseudo-elements (a = 0, b = 0, c = 0, d = 1): These selectors have the lowest specificity and are overridden by other types of selectors.
+        </p>
+        <img src="../assets/images/Cascade.png" width="50%"/>
+        <p>
+            In this example, if you have an element like: div id="myDiv" class="myClass", the text color will be red because the ID selector (#myDiv) has a higher specificity than the class selector (.myClass) and the tag selector (div).
+        </p>
+        <hr/>
+        <nav>
+            <ul>
+              <a href="../index.html"><li style="display: inline-block;">Back to main page</li></a>
+            </ul>   
+        </nav>
+    </div>
+</body>
+</html>

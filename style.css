@@ -1,0 +1,13 @@
+/* Don't change the existing CSS. */
+
+.box {
+  background-color: #2A2438;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
